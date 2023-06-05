@@ -10,7 +10,7 @@
         <link rel="pingback" href="https: //domainname.com/xmlrpc.php" />
         <title></title>
         <!-- style and script resources -->
-        <link rel="stylesheet" href="" media="all">
+        <link rel="stylesheet" href="protect-surface-mapping-style.css" media="all">
         <script src=""></script>
         <!--meta properties -->
         <meta name="description" content=" Your site description." />
@@ -61,6 +61,13 @@
         <![endif]-->
         <div id="side-menu" style="width:7%">
             <!-- Side menu goes here -->
+        </div>
+        <div class="json-input" style="width:100%">
+            <form id="json-url-form">
+                <label for="json-url">Enter the URL for the JSON file:</label>
+                <input type="url" id="json-url" name="json-url" required>
+                <input type="submit" value="Load Data">
+            </form>
         </div>
         <div id="content-area" style="width:93%">
             <div id="panel1" style="width:95%">
@@ -125,7 +132,7 @@
         </div>
         <!-- Include your JavaScript here -->
         <!-- <script src="path/to/your/javascript"></script> -->
-        <link rel="stylesheet" type="text/css" href="/" media="print" />
-        <script src="" async defer></script>
+        <!-- <link rel="stylesheet" type="text/css" href="/" media="print" /> -->
+        <script src="protect-surface-mapping-script.js" async defer></script>
     </body>
 </html>
