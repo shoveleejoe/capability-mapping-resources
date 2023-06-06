@@ -1,0 +1,59 @@
+{
+    "cards": [
+      {
+        "cardType": "asset",
+        "displayValue": "Server 1",
+        "iconPath": "path/to/icon1.svg",
+        "assetCategory": "device",
+        "environment": "Production"
+      },
+      {
+        "cardType": "asset",
+        "displayValue": "Web Application 1",
+        "iconPath": "path/to/icon2.svg",
+        "assetCategory": "application",
+        "environment": "Development"
+      },
+      {
+        "cardType": "control",
+        "displayValue": "Firewall",
+        "iconPath": "path/to/icon3.svg",
+        "controlDescription": "A firewall control",
+        "controlCategory": "technical",
+        "controlType": "preventive",
+        "controlFunction": "protect",
+        "controlOwnershipLevel": "system",
+        "operatingEffectiveness": "85%"
+      },
+      {
+        "cardType": "control",
+        "displayValue": "Security Policy",
+        "iconPath": "path/to/icon4.svg",
+        "controlDescription": "A security policy control",
+        "controlCategory": "administrative",
+        "controlType": "deterrent",
+        "controlFunction": "identify",
+        "controlOwnershipLevel": "organization",
+        "operatingEffectiveness": "95%"
+      },
+      {
+        "cardType": "technique",
+        "displayValue": "Technique 1",
+        "iconPath": "path/to/icon5.svg",
+        "techniqueID": "T001",
+        "techniqueName": "Initial Access",
+        "tactic": "Resource Development",
+        "assetCategory": "device"
+      },
+      {
+        "cardType": "technique",
+        "displayValue": "Technique 2",
+        "iconPath": "path/to/icon6.svg",
+        "techniqueID": "T002",
+        "techniqueName": "Execution",
+        "tactic": "Initial Access",
+        "assetCategory": "application"
+      }
+    ]
+  }
+  
