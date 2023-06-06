@@ -1,57 +1,37 @@
 body {
-    background-color: #333;
-    color: #fff;
+    background-color: #282828;
+    color: #ffffff;
     font-family: Arial, sans-serif;
   }
   
-  #json-form-container {
-    margin: 20px;
-  }
-  
-  #json-form {
+  #main-container {
     display: flex;
-    justify-content: space-between;
-    width: 300px;
-    margin-bottom: 20px;
   }
   
   #side-menu {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 3%;
-    height: 100%;
-    background-color: #444;
-    transition: width 0.5s ease;
-  }
-  
-  #side-menu.expanded {
     width: 7%;
   }
   
-  #main-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* For device, network, application, data, users */
-    grid-template-rows: repeat(18, 1fr); /* For Identify, Protect, Deceive, Detect, Respond, Recover, and all ATT&CK Technique rows */
-    gap: 10px;
-    margin-left: 8%;
-    padding: 20px;
+  #main-content {
+    width: 93%;
   }
   
   .panel {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    margin-bottom: 20px;
   }
   
-  .card {
-    /* Styles for the cards */
-    padding: 10px;
-    border: 1px solid #555;
-    background-color: #444;
+  table {
+    width: 100%;
+    border-collapse: collapse;
   }
   
-  #panel4 {
-    /* Panel 4 styles */
+  th {
+    border: 1px solid #ffffff;
+    padding: 5px;
+  }
+  
+  td {
+    border: 1px solid #888888;
+    padding: 5px;
   }
   

@@ -1,38 +1,96 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Asset Management</title>
-    <link rel="stylesheet" type="text/css" href="protect-surface-mapping-style.css">
-    <script src="protect-surface-mapping-script.js" defer></script>
-  </head>
-  
-  <body>
-    <div id="json-form-container">
-      <form id="json-form">
-        <label for="json-url">Enter JSON URL:</label>
-        <input type="text" id="json-url" name="json-url" required>
-        <button type="submit">Load JSON</button>
-      </form>
+<head>
+  <title>Page Title</title>
+  <link rel="stylesheet" type="text/css" href="protect-surface-mapping-style.css">
+</head>
+<body>
+  <!-- Form for JSON URL input -->
+  <div id="json-input-container">
+    <form id="json-form-url" action="">
+      <label for="json-input-url">Input JSON URL:</label><br>
+      <input type="text" id="json-input-url" name="json-input-url"><br>
+      <input type="submit" value="Submit URL">
+    </form>
+
+    <form id="json-form-file" action="">
+      <label for="json-input-file">Select JSON file:</label><br>
+      <input type="file" id="json-input-file" name="json-input-file" accept=".json"><br>
+      <input type="submit" value="Submit File">
+    </form>
+  </div>
+
+  <div id="main-container">
+    <!-- Side Menu -->
+    <div id="side-menu">
+      <!-- Contents of side menu -->
     </div>
     
-    <div id="side-menu">
-      <!-- Side menu content here -->
-    </div>
-
-    <div id="main-grid">
+    <!-- Main Content -->
+    <div id="main-content">
+      <!-- Panel 1 - Assets -->
       <div id="panel1" class="panel">
-        <!-- Panel 1 content will be populated here dynamically -->
+        <table id="asset-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Devices</th>
+              <th>Networks</th>
+              <th>Applications</th>
+              <th>Data</th>
+              <th>Users</th>
+            </tr>
+          </thead>
+          <tbody id="asset-body">
+            <!-- Asset cards will be dynamically inserted here -->
+          </tbody>
+        </table>
       </div>
-      <div id="panel2" class="panel">
-        <!-- Panel 2 content will be populated here dynamically -->
-      </div>
-      <div id="panel3" class="panel">
-        <!-- Panel 3 content will be populated here dynamically -->
-      </div>
-    </div>
 
-    <div id="panel4">
-      <!-- Panel 4 content here -->
+      <!-- Panel 2 - Controls -->
+      <div id="panel2" class="panel">
+        <table id="control-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Devices</th>
+              <th>Networks</th>
+              <th>Applications</th>
+              <th>Data</th>
+              <th>Users</th>
+            </tr>
+          </thead>
+          <tbody id="control-body">
+            <!-- Control cards will be dynamically inserted here -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Panel 3 - Techniques -->
+      <div id="panel3" class="panel">
+        <table id="technique-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Devices</th>
+              <th>Networks</th>
+              <th>Applications</th>
+              <th>Data</th>
+              <th>Users</th>
+            </tr>
+          </thead>
+          <tbody id="technique-body">
+            <!-- Technique cards will be dynamically inserted here -->
+          </tbody>
+        </table>
+      </div>
+      
+      <!-- Panel 4 - Sankey Diagram -->
+      <div id="panel4" class="panel">
+        <!-- Sankey diagram will be inserted here -->
+      </div>
     </div>
-  </body>
+  </div>
+  <script src="protect-surface-mapping-script.js"></script>
+</body>
 </html>
