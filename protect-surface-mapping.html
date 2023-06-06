@@ -11,7 +11,7 @@
         <title></title>
         <!-- style and script resources -->
         <link rel="stylesheet" href="protect-surface-mapping-style.css" media="all">
-        <script src=""></script>
+        <script src="protect-surface-mapping-script.js" async defer></script>
         <!--meta properties -->
         <meta name="description" content=" Your site description." />
         <!--detailed robots meta https://developers.google.com/search/reference/robots_meta_tag -->
@@ -56,83 +56,32 @@
         <!--complete list of meta tags at - https://gist.github.com/lancejpollard/1978404 -->
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <div id="side-menu" style="width:7%">
-            <!-- Side menu goes here -->
+        <div id="json-form-container">
+          <form id="json-form">
+            <label for="json-url">Enter JSON URL:</label>
+            <input type="text" id="json-url" name="json-url" required>
+            <button type="submit">Load JSON</button>
+          </form>
         </div>
-        <div class="json-input" style="width:100%">
-            <form id="json-url-form">
-                <label for="json-url">Enter the URL for the JSON file:</label>
-                <input type="url" id="json-url" name="json-url" required>
-                <input type="submit" value="Load Data">
-            </form>
+        
+        <div id="side-menu">
+          <!-- Side menu content here -->
         </div>
-        <div id="content-area" style="width:93%">
-            <div id="panel1" style="width:95%">
-                <!-- Panel 1 content goes here -->
-                <div class="grid-container">
-                    <!-- A card would look something like this: -->
-                    <!--
-                    <div class="card asset-card">
-                        <img src="path/to/icon.svg" alt="Asset Icon">
-                        <h2>Asset Display Name</h2>
-                        <p>Asset Category: Network</p>
-                        <p>Environment: Environment Name</p>
-                    </div>
-                    -->
-            
-                    <!-- Actual cards are to be inserted here by JavaScript -->
-                </div>
-            </div>
-            <div id="panel2" style="width:95%">
-                <!-- Panel 2 content goes here -->
-                <div class="grid-container">
-                    <!-- A card might look something like this: -->
-                    <!--
-                    <div class="card control-card">
-                        <img src="path/to/icon.svg" alt="Control Icon">
-                        <h2>Control Display Name</h2>
-                        <p>Control Description: Description Text</p>
-                        <p>Control Category: Physical/Administrative/Technical</p>
-                        <p>Control Type: Deterrent/Preventive/Detective/Corrective</p>
-                        <p>Control Function: Identify/Protect/Deceive/Detect/Respond/Recover</p>
-                        <p>Control Ownership Level: Enterprise/Organization/System/Third-Party</p>
-                        <p>Operating Effectiveness: Percentage</p>
-                    </div>
-                    -->
-            
-                    <!-- Actual cards are to be inserted here by JavaScript -->
-                </div>
-            </div>
-            <div id="panel3" style="width:95%">
-                <!-- Panel 3 content goes here -->
-                <div class="grid-container">
-                    <!-- A card might look something like this: -->
-                    <!--
-                    <div class="card technique-card">
-                        <img src="path/to/icon.svg" alt="Technique Icon">
-                        <h2>Technique Display Name</h2>
-                        <p>Technique ID: ID</p>
-                        <p>Technique Name: Name</p>
-                        <p>Tactic: Tactic</p>
-                        <p>Asset Category: Asset Category</p>
-                    </div>
-                    -->
-            
-                    <!-- Actual cards are to be inserted here by JavaScript -->
-                </div>
-            </div>
-            
-            <div id="panel4" style="width:95%">
-                <!-- Panel 4 content goes here -->
-                <!-- This will contain the Sankey diagram -->
-            </div>
+    
+        <div id="main-grid">
+          <div id="panel1" class="panel">
+            <!-- Panel 1 content will be populated here dynamically -->
+          </div>
+          <div id="panel2" class="panel">
+            <!-- Panel 2 content will be populated here dynamically -->
+          </div>
+          <div id="panel3" class="panel">
+            <!-- Panel 3 content will be populated here dynamically -->
+          </div>
         </div>
-        <!-- Include your JavaScript here -->
-        <!-- <script src="path/to/your/javascript"></script> -->
-        <!-- <link rel="stylesheet" type="text/css" href="/" media="print" /> -->
-        <script src="protect-surface-mapping-script.js" async defer></script>
-    </body>
+    
+        <div id="panel4">
+          <!-- Panel 4 content here -->
+        </div>
+      </body>        
 </html>

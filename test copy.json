@@ -1,59 +1,260 @@
 {
-    "cards": [
-      {
-        "cardType": "asset",
-        "displayValue": "Server 1",
-        "iconPath": "path/to/icon1.svg",
-        "assetCategory": "device",
-        "environment": "Production"
-      },
-      {
-        "cardType": "asset",
-        "displayValue": "Web Application 1",
-        "iconPath": "path/to/icon2.svg",
-        "assetCategory": "application",
-        "environment": "Development"
-      },
-      {
-        "cardType": "control",
-        "displayValue": "Firewall",
-        "iconPath": "path/to/icon3.svg",
-        "controlDescription": "A firewall control",
-        "controlCategory": "technical",
-        "controlType": "preventive",
-        "controlFunction": "protect",
-        "controlOwnershipLevel": "system",
-        "operatingEffectiveness": "85%"
-      },
-      {
-        "cardType": "control",
-        "displayValue": "Security Policy",
-        "iconPath": "path/to/icon4.svg",
-        "controlDescription": "A security policy control",
-        "controlCategory": "administrative",
-        "controlType": "deterrent",
-        "controlFunction": "identify",
-        "controlOwnershipLevel": "organization",
-        "operatingEffectiveness": "95%"
-      },
-      {
-        "cardType": "technique",
-        "displayValue": "Technique 1",
-        "iconPath": "path/to/icon5.svg",
-        "techniqueID": "T001",
-        "techniqueName": "Initial Access",
-        "tactic": "Resource Development",
-        "assetCategory": "device"
-      },
-      {
-        "cardType": "technique",
-        "displayValue": "Technique 2",
-        "iconPath": "path/to/icon6.svg",
-        "techniqueID": "T002",
-        "techniqueName": "Execution",
-        "tactic": "Initial Access",
-        "assetCategory": "application"
-      }
-    ]
-  }
-  
+  "assets": [
+    {
+      "cardType": "asset",
+      "displayValue": "Asset 1",
+      "assetCategory": "devices",
+      "iconPath": "/path/to/icon1.svg",
+      "environment": "Production"
+    },
+    {
+      "cardType": "asset",
+      "displayValue": "Asset 2",
+      "assetCategory": "networks",
+      "iconPath": "/path/to/icon2.svg",
+      "environment": "Testing"
+    },
+    {
+      "cardType": "asset",
+      "displayValue": "Asset 3",
+      "assetCategory": "applications",
+      "iconPath": "/path/to/icon3.svg",
+      "environment": "Production"
+    },
+    {
+      "cardType": "asset",
+      "displayValue": "Asset 4",
+      "assetCategory": "data",
+      "iconPath": "/path/to/icon4.svg",
+      "environment": "Development"
+    },
+    {
+      "cardType": "asset",
+      "displayValue": "Asset 5",
+      "assetCategory": "users",
+      "iconPath": "/path/to/icon5.svg",
+      "environment": "Testing"
+    },
+    {
+      "cardType": "asset",
+      "displayValue": "Asset 6",
+      "assetCategory": "devices",
+      "iconPath": "/path/to/icon6.svg",
+      "environment": "Development"
+    }
+  ],
+  "controls": [
+    {
+      "cardType": "control",
+      "displayValue": "AC-11",
+      "assetCategory": "devices",
+      "iconPath": "/path/to/icon1.svg",
+      "controlDescription": "Session Lock",
+      "controlCategory": "technical",
+      "controlType": "preventive",
+      "controlFunction": "protect",
+      "controlOwnershipLevel": "enterprise",
+      "controlEffectiveness": 90
+    },
+    {
+      "cardType": "control",
+      "displayValue": "AC-12",
+      "assetCategory": "networks",
+      "iconPath": "/path/to/icon2.svg",
+      "controlDescription": "Session Termination",
+      "controlCategory": "technical",
+      "controlType": "deterrent",
+      "controlFunction": "protect",
+      "controlOwnershipLevel": "organization",
+      "controlEffectiveness": 85
+    },
+    {
+      "cardType": "control",
+      "displayValue": "CM-7",
+      "assetCategory": "applications",
+      "iconPath": "/path/to/icon3.svg",
+      "controlDescription": "Least Functionality",
+      "controlCategory": "technical",
+      "controlType": "preventive",
+      "controlFunction": "protect",
+      "controlOwnershipLevel": "system",
+      "controlEffectiveness": 80
+    },
+    {
+      "cardType": "control",
+      "displayValue": "IA-9",
+      "assetCategory": "users",
+      "iconPath": "/path/to/icon4.svg",
+      "controlDescription": "Service Identification and Authentication",
+      "controlCategory": "technical",
+      "controlType": "deterrent",
+      "controlFunction": "identify",
+      "controlOwnershipLevel": "enterprise",
+      "controlEffectiveness": 75
+    },
+    {
+      "cardType": "control",
+      "displayValue": "IR-5",
+      "assetCategory": "data",
+      "iconPath": "/path/to/icon5.svg",
+      "controlDescription": "Incident Monitoring",
+      "controlCategory": "administrative",
+      "controlType": "detective",
+      "controlFunction": "respond",
+      "controlOwnershipLevel": "enterprise",
+      "controlEffectiveness": 85
+    },
+    {
+      "cardType": "control",
+      "displayValue": "RA-5",
+      "assetCategory": "applications",
+      "iconPath": "/path/to/icon6.svg",
+      "controlDescription": "Vulnerability Scanning",
+      "controlCategory": "technical",
+      "controlType": "detective",
+      "controlFunction": "identify",
+      "controlOwnershipLevel": "enterprise",
+      "controlEffectiveness": 95
+    },
+    {
+      "cardType": "control",
+      "displayValue": "SC-13",
+      "assetCategory": "networks",
+      "iconPath": "/path/to/icon7.svg",
+      "controlDescription": "Cryptographic Protection",
+      "controlCategory": "technical",
+      "controlType": "preventive",
+      "controlFunction": "protect",
+      "controlOwnershipLevel": "system",
+      "controlEffectiveness": 90
+    },
+    {
+      "cardType": "control",
+      "displayValue": "SC-16",
+      "assetCategory": "devices",
+      "iconPath": "/path/to/icon8.svg",
+      "controlDescription": "Transmission of Security Attributes",
+      "controlCategory": "technical",
+      "controlType": "preventive",
+      "controlFunction": "protect",
+      "controlOwnershipLevel": "system",
+      "controlEffectiveness": 80
+    },
+    {
+      "cardType": "control",
+      "displayValue": "SC-7",
+      "assetCategory": "networks",
+      "iconPath": "/path/to/icon9.svg",
+      "controlDescription": "Boundary Protection",
+      "controlCategory": "technical",
+      "controlType": "preventive",
+      "controlFunction": "protect",
+      "controlOwnershipLevel": "organization",
+      "controlEffectiveness": 70
+    },
+    {
+      "cardType": "control",
+      "displayValue": "SC-8",
+      "assetCategory": "devices",
+      "iconPath": "/path/to/icon10.svg",
+      "controlDescription": "Transmission Integrity",
+      "controlCategory": "technical",
+      "controlType": "deterrent",
+      "controlFunction": "protect",
+      "controlOwnershipLevel": "organization",
+      "controlEffectiveness": 85
+    }
+  ],
+  "techniques": [
+    {
+      "cardType": "technique",
+      "displayValue": "T1557",
+      "assetCategory": "networks",
+      "iconPath": "/path/to/icon1.svg",
+      "techniqueID": "T1557",
+      "techniqueName": "Man-in-the-Middle",
+      "tactic": "credential access"
+    },
+    {
+      "cardType": "technique",
+      "displayValue": "T1602",
+      "assetCategory": "applications",
+      "iconPath": "/path/to/icon2.svg",
+      "techniqueID": "T1602",
+      "techniqueName": "Hardware Additions",
+      "tactic": "persistence"
+    },
+    {
+      "cardType": "technique",
+      "displayValue": "T1204",
+      "assetCategory": "users",
+      "iconPath": "/path/to/icon3.svg",
+      "techniqueID": "T1204",
+      "techniqueName": "User Execution",
+      "tactic": "execution"
+    },
+    {
+      "techniqueID": "T1052",
+      "cardType": "technique",
+      "displayValue": "T1052",
+      "assetCategory": "applications",
+      "iconPath": "/path/to/icon4.svg",
+      "techniqueName": "Exfiltration Over Command and Control Channel",
+      "tactic": "exfiltration"
+    },
+    {
+      "techniqueID": "T1554",
+      "cardType": "technique",
+      "displayValue": "T1554",
+      "assetCategory": "devices",
+      "iconPath": "/path/to/icon5.svg",
+      "techniqueName": "Compromise Client Software Binary",
+      "tactic": "persistence"
+    },
+    {
+      "techniqueID": "T1566",
+      "cardType": "technique",
+      "displayValue": "T1566",
+      "assetCategory": "networks",
+      "iconPath": "/path/to/icon6.svg",
+      "techniqueName": "Phishing",
+      "tactic": "initial access"
+    },
+    {
+      "techniqueID": "T1505",
+      "cardType": "technique",
+      "displayValue": "T1505",
+      "assetCategory": "devices",
+      "iconPath": "/path/to/icon7.svg",
+      "techniqueName": "Server Software Component",
+      "tactic": "persistence"
+    },
+    {
+      "techniqueID": "T1048",
+      "cardType": "technique",
+      "displayValue": "T1048",
+      "assetCategory": "applications",
+      "iconPath": "/path/to/icon8.svg",
+      "techniqueName": "Exfiltration Over Alternative Protocol",
+      "tactic": "exfiltration"
+    },
+    {
+      "techniqueID": "T1133",
+      "cardType": "technique",
+      "displayValue": "T1133",
+      "assetCategory": "users",
+      "iconPath": "/path/to/icon9.svg",
+      "techniqueName": "External Remote Services",
+      "tactic": "persistence"
+    },
+    {
+      "techniqueID": "T1119",
+      "cardType": "technique",
+      "displayValue": "T1119",
+      "assetCategory": "networks",
+      "iconPath": "/path/to/icon10.svg",
+      "techniqueName": "Automated Collection",
+      "tactic": "collection"
+    }
+  ]
+}
