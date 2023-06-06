@@ -54,14 +54,6 @@
         "tactic": "Initial Access",
         "assetCategory": "application"
       }
-    ],
-    "sankey": {
-      "nodes": [
-        // Sankey diagram nodes data here
-      ],
-      "links": [
-        // Sankey diagram links data here
-      ]
-    }
+    ]
   }
   
